@@ -6,6 +6,7 @@ import "./sector.css"
 import { useLocation } from 'react-router-dom';
 import  bank from "../facility_gridview/assets/icons/banking-and-finacial-service.png";
 import Transport_and_infrastructure from "../facility_gridview/assets/icons/Transport and infrastructure.png";
+import disable_people from "../facility_gridview/assets/icons/Disability main page image.jpg";
 const Sector = () => {
   
     // get the props from the category page
@@ -27,7 +28,10 @@ const Sector = () => {
             else if(message === "Transport and infrastructure"){
                 setImage(Transport_and_infrastructure);
             }
-
+          
+            else if(message === "Disable people"){
+                setImage(disable_people);
+            }
 
 
     }, [message]);
