@@ -97,7 +97,8 @@ margin-left: 10px;
 width: 95%;
 height: 160px;
 border: 1px solid black;
-padding: 20px
+padding: 20px;
+overflow: hidden;
 }
 .scheme_name{
     font-size: 30px;
