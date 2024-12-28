@@ -21,7 +21,7 @@ const images = [
 
 // Example titles
 const titles = [
-  "Banking and finance", "Bank", "Disabled Person", "Item 4",
+  "Banking and finance", "Transport and infrastructure", "Disabled Person", "Item 4",
   "Item 5", "Item 6", "Item 7", "Item 8",
   "Item 9", "Item 10", "Item 11", "Item 12",
 ];
@@ -38,7 +38,7 @@ const Category = () => {
       {images.map((image, index) => (
         <div className="grid-item" key={index}>
           <div className="circle-container">
-            <img src={image} alt={`icon-${index}`} className="icon" />
+            <img src={image}   alt={`icon-${index}`} className="icon" />
           </div>
           <button className="title" onClick={() => handleRedirect(titles[index])}>{titles[index]}</button>
         </div>

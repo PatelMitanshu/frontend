@@ -4,18 +4,32 @@ import Footer from "../../footer/footer"
 import "./sector.css"
 import "./sector.css"
 import { useLocation } from 'react-router-dom';
+import  bank from "../facility_gridview/assets/icons/banking-and-finacial-service.png";
+import Transport_and_infrastructure from "../facility_gridview/assets/icons/Transport and infrastructure.png";
 const Sector = () => {
+  
     // get the props from the category page
     const location = useLocation();
     var message = location.state.message;
     const [schemes, setSchemes] = useState([]);
-
+    const [image, setImage] = useState([]);
+    const [image_name, setImage_name] = useState([]);
+             
     useEffect(() => {
         const schemes_backend_url = "http://localhost:8000/api/v1/users/scheme-get";
         fetch(schemes_backend_url)
             .then(response => response.json())
             .then(data => setSchemes(data));
-    }, []);
+            setImage_name(message);
+            if(message === "Banking and finance"){
+                setImage(bank);
+            }
+            else if(message === "Transport and infrastructure"){
+                setImage(Transport_and_infrastructure);
+            }
+
+
+    }, [message]);
 
     const schemedata = () => {
         return schemes.filter((scheme) => scheme.sector === message).map((scheme) => {
@@ -35,6 +49,7 @@ const Sector = () => {
     <Navigation />
      <div className="sector_container">
        <div className="sector_image">  
+         <img className="scheme_image" src={image} alt="sector_image" />
        </div>
      <div className="scheme_data" >
         <div className="filter_container">

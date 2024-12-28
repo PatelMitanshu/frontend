@@ -13,7 +13,11 @@ body{
 }
 .sector_image{
     height:369px;
-    border: 2px solid black;
+    width: 97%;
+    margin-left: 22px;
+}
+.scheme_image{
+    height: 369px;
     width: 97%;
     margin-left: 22px;
 }
