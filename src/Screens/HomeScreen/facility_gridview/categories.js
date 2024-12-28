@@ -21,7 +21,7 @@ const images = [
 
 // Example titles
 const titles = [
-  "Banking and finance", "Transport and infrastructure", "Disabled Person", "Item 4",
+  "Banking and finance", "Transport and infrastructure", "Disable people", "Item 4",
   "Item 5", "Item 6", "Item 7", "Item 8",
   "Item 9", "Item 10", "Item 11", "Item 12",
 ];

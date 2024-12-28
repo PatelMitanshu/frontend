@@ -29,9 +29,11 @@ const Sector = () => {
             }
 
 
+
     }, [message]);
 
     const schemedata = () => {
+        console.log(message);
         return schemes.filter((scheme) => scheme.sector === message).map((scheme) => {
             return (
                 <div className="scheme_detailes" key={scheme.id}>
