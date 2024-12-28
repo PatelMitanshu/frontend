@@ -16,7 +16,7 @@ const Sector = () => {
     const [image_name, setImage_name] = useState([]);
              
     useEffect(() => {
-        const schemes_backend_url = "http://localhost:8000/api/v1/users/scheme-get";
+        const schemes_backend_url = "https://backend-wq9h.onrender.com/api/v1/users/scheme-get";
         fetch(schemes_backend_url)
             .then(response => response.json())
             .then(data => setSchemes(data));
