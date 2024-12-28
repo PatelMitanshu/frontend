@@ -1,0 +1,37 @@
+/* Full screen width for the row container */
+.row-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Individual container style */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;  /* Solid black border */
+    border-radius: 20px;  /* Border radius */
+    padding: 20px;
+    width: 30%;  /* Each container takes 30% of the width */
+  }
+  
+  /* Image style */
+  .image {
+    width: 100%;
+    height: auto;
+    max-width: 150px;  /* Set a max width to make images look consistent */
+    border-radius: 10px;
+  }
+  
+  /* Title style */
+  .title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  

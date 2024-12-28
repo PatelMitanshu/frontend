@@ -1,0 +1,109 @@
+
+
+.homescreen_main{
+    padding: 16px;
+}
+
+.main_row{
+    display: flex;
+  flex-direction: row; /* Ensures items are placed in a row */
+  justify-content: space-between; /* Adjust spacing between items */
+  align-items: center; /* Align items vertically */
+}
+
+.signup_login{
+  margin: 5px;
+  padding: 5px;
+  height: 40px;
+  width: 150px;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  background-color: blue;
+}
+.signup_login:hover{
+  background-color: #1e90ff;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+}
+
+.box2{
+    width: 500px;
+    height: 100px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 5px 10px;
+    
+}  
+
+#search{
+    flex: 1;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+
+.box2-column{
+    display: flex;
+    flex-direction: column; /* Ensures items are placed in a row */
+    justify-content: space-between; /* Adjust spacing between items */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Add space between items */
+    
+}
+
+/* General menu styling */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between menu items */
+    padding: 20px;
+    
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu-item {
+    position: relative; /* For positioning the underline */
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .menu-item:hover {
+    color: #0078d7; /* Change text color on hover */
+  }
+  
+  /* Underline animation */
+  .menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Position underline at the bottom */
+    width: 0;
+    height: 2px;
+    background-color: #0078d7; /* Underline color */
+    transition: width 0.3s ease; /* Smooth animation for underline */
+  }
+  
+  .menu-item:hover::after {
+    width: 100%; /* Expand underline on hover */
+  }
+
+.box3{
+    width: 190px;
+    height: 100px;
+    display: flex;
+}

@@ -1,0 +1,156 @@
+/* Footer Wrapper */
+.modern-footer {
+  /* background-color: #f8f9fa; */
+  padding: 40px 5%;
+  font-family: 'Arial', sans-serif;
+  color: #343a40;
+  margin-top: 40px;
+}
+
+/* Top Section */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Logo Section */
+.footer-logo {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.footer-logo-img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Quick Links */
+.footer-quick-links {
+  flex: 2;
+  min-width: 300px;
+}
+
+.footer-quick-links h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.quick-links-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links-grid li {
+  margin-bottom: 10px;
+  color: #495057;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.quick-links-grid li:hover {
+  color: #007bff;
+  transform: translateX(5px);
+}
+
+/* About Section */
+.footer-about {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.footer-about p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Divider */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dee2e6;
+  margin: 20px 0;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Social Icons */
+.footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+/* Copyright */
+.footer-copyright {
+  flex: 1;
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo, .footer-about, .footer-quick-links {
+    text-align: center;
+  }
+
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+  }
+}

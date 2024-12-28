@@ -1,0 +1,52 @@
+/* Slider container */
+/* Slider container */
+.slider {
+    position: relative;
+    width: 100%; /* Full screen width */
+    height: 70vh; /* 50% of the screen height */
+    overflow:hidden; /* Hide content outside the container */
+  }
+  
+  /* Slides container */
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    width: 300%; /* 3 slides, each 100% width */
+  }
+  
+  /* Individual slide */
+  .slide {
+    width: 100%; /* Each image takes 100% of the screen width */
+    flex-shrink: 0; /* Prevent shrinking of slides */
+    height: 100%; /* Make each slide take 100% of the slider height */
+    object-fit:cover; /* Ensure the image covers the entire area */
+    object-position: center; /* Center the image within the slide */  
+  }
+  
+  /* Arrows */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .left-arrow {
+    left: 20px;
+  }
+  
+  .right-arrow {
+    right: 20px;
+  }
+  
+  /* Hover effect for arrows */
+  .arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  

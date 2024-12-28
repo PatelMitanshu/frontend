@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap');
+
+body{
+    font-family: 'Caladea', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.flex {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items in a row */
+    gap: 15px; /* Optional: Add space between dropdowns */
+}
+.sector_image{
+    height:369px;
+    border: 2px solid black;
+    width: 97%;
+    margin-left: 22px;
+}
+.filter_container{
+    width: 30%;
+    height: 100%;
+}
+.scheme_data{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 1000px;
+    width: 98%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    overflow: scroll;
+}
+.filter-container{
+width: 30%;
+height: 100%;
+}
+.sector_container{
+    height: 100%;
+}
+.filter_text{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.search_bar_container{
+    width: 100%;
+    padding: 20px;
+}
+
+.search_bar{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline:none;
+}
+
+
+.filter_container{
+    width: 20%;
+    height: 97%;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.filter_dropdown{
+    width: 95%;
+    margin-left: 10px;
+}
+
+.scheme_card{
+text-align: left;
+}
+
+
+.schemes{
+    padding: 10px;
+}
+
+.scheme_container{
+    padding: 20px;
+    width: 100%;
+}
+.scheme_list{
+    width: 75%;
+}
+.scheme_detailes{
+border-radius: 20px;
+margin-top: 50px;
+margin-left: 10px;
+width: 95%;
+height: 160px;
+border: 1px solid black;
+padding: 20px
+}
+.scheme_name{
+    font-size: 30px;
+    text-align: start;
+}
+.scheme_inf{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: start;
+}
+.scheme_detailes:hover {
+        transform: scale(1.02);
+        transition: transform 0.5s ease-in-out;
+}
