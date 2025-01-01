@@ -80,6 +80,7 @@
     font-weight: bold;
     padding: 5px 10px;
     transition: color 0.3s ease; /* Smooth color transition */
+    border: none;
   }
   
   .menu-item:hover {

@@ -13,7 +13,6 @@ function HomeScreen() {
   return (
     <div className="homeScreen">    
                     <Navigation></Navigation>
-
                     <Slider></Slider>
                     <br></br>
                     <p id="category-title">Find Schems as per your requirement. Categories are divided as below</p>

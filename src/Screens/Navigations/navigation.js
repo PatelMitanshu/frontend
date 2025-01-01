@@ -1,11 +1,15 @@
 import React from "react"
 import "./navigation_style.css"
-
-
+import { useNavigate } from "react-router-dom";
 var logo = require('../../assets/logo.png');
 function Navigation() { 
+    const navigate = useNavigate();
 
-    return (
+    const redirect = () => {
+        navigate("/state");
+    }
+
+return (
 <div className="homescreen_main">
 <div className="main_row">
     <div className="box1">
@@ -21,15 +25,15 @@ function Navigation() {
         <div className="box2-column"></div>
 
             <div className="search-container">
-                <span class="search-icon">&#128269;</span> 
+                <span className="search-icon">&#128269;</span> 
                 <input type="text" placeholder="Search here" id="search"/>
             </div>
-
-        <div class="menu">
-            <a href="#" class="menu-item">Home</a>
-            <a href="#" class="menu-item">Ministry</a>
-            <a href="#" class="menu-item">State</a>
-            <a href="#" class="menu-item">About Us</a>
+ 
+        <div className="menu">
+            <button onClick={() => navigate("/")} className="menu-item">Home</button>
+            <button className="menu-item">Ministry</button>
+            <button onClick={() =>{navigate("/state")}} className="menu-item">State</button>
+            <button onClick={()=>{navigate("/Aboutus")}} className="menu-item">About Us</button>
             </div>
 
     </div>

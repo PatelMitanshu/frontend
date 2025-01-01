@@ -7,10 +7,12 @@ import { useLocation } from 'react-router-dom';
 import  bank from "../facility_gridview/assets/icons/banking-and-finacial-service.png";
 import Transport_and_infrastructure from "../facility_gridview/assets/icons/Transport and infrastructure.png";
 import disable_people from "../facility_gridview/assets/icons/Disability main page image.jpg";
+import { useNavigate } from 'react-router-dom';
+
 const Sector = () => {
-  
     // get the props from the category page
     const location = useLocation();
+    const navigate = useNavigate();
     var message = location.state.message;
     const [schemes, setSchemes] = useState([]);
     const [image, setImage] = useState([]);
@@ -36,24 +38,29 @@ const Sector = () => {
 
     }, [message]);
 
-    const schemedata = () => {
-        console.log(message);
-        return schemes.filter((scheme) => scheme.sector === message).map((scheme) => {
-            return (
-                <div className="scheme_detailes" key={scheme.id}>
-                    <div className="scheme_">
-                        <p className="scheme_name">{scheme.schemeName}</p>
-                        <p className="scheme_inf">{scheme.QuickOverview}</p>
-                    </div>
+const redirectschememain = (scheme) => { 
+    navigate('/sector/scheme', { state: { message: scheme } });
+}
+const schemedata = () => {
+    return schemes.filter((scheme) => scheme.sector === message).map((scheme) => {
+        return (
+            <button 
+                onClick={() => redirectschememain(scheme._id)} // Use arrow function to pass the correct scheme
+                className="scheme_detailes" 
+                key={scheme.id}>   
+                <div className="scheme_">
+                    <p className="scheme_name">{scheme.schemeName}</p>
+                    <p className="scheme_inf">{scheme.QuickOverview}</p>
                 </div>
-            );
-        }
-   ) };
+            </button>
+        );
+    });
+};
     return (
         
   <div className="sector_container">
     <Navigation />
-     <div className="sector_container">
+    <div className="sector_container">
        <div className="sector_image">  
          <img className="scheme_image" src={image} alt="sector_image" />
        </div>

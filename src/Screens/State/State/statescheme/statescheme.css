@@ -1,0 +1,62 @@
+/* Fullscreen container with 70% width and 50vh height */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 20px; /* Space between grid items */
+    width: 70vw; /* 70% of the screen width */
+    
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the grid horizontally */
+  }
+  
+  /* Individual grid item */
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease; /* Hover transition effect */
+  }
+  
+  /* Circle container with green border */
+  .circle-container {
+    width: 120px;  /* Increased the size of the circle */
+    height: 120px; /* Increased the size of the circle */
+    border-radius: 50%;
+    border: 5px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Hover zoom effect */
+  }
+  
+  /* Icon style */
+  .icon {
+    width: 70px; /* Increased the size of the icon */
+    height: 70px; /* Increased the size of the icon */
+    object-fit: contain;
+  }
+  
+  /* Title style */
+  .title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Hover effect: enlarge the container */
+  .grid-item:hover .circle-container {
+    transform: scale(1.1); /* Slightly enlarge the circle on hover */
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the entire item on hover */
+  }
+  

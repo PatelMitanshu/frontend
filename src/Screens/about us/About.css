@@ -1,0 +1,19 @@
+*{
+    background-color: white;
+}
+
+
+.image_container {/* Set the height of the containe Dashed border to indicate it's an image container *//* Center horizontally */
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    object-fit:contain; /* Center horizontally */
+}
+
+.heading, .description{
+    font-size: 20px;
+    text-align: left;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding : 20px;
+}
