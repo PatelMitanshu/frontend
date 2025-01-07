@@ -10,7 +10,7 @@ const ThreeContainersRow = () => {
         <img src={login_signup} alt="Image 1" className="image" />
         <p className="title">Login/Sign up first</p>
       </div>
-      <div className="container">
+      <div className=" container">
         <img src={search} alt="Image 2" className="image" />
         <p className="title">Search for what type of scheme you want to find</p>
       </div>

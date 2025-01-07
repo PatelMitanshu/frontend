@@ -8,6 +8,9 @@ import StateScreen from './Screens/State/State/statescreen.js';
 import Redirectparticularscheme from './Screens/HomeScreen/sector/redirectaprticularscheme';
 import Aboutus from './Screens/about us/Aboutus.jsx';
 import Statescheme from './Screens/State/State/statescheme/statescheme.js';
+import Faqs from './Screens/faqs/faqs.js';
+
+
 
 function App() {
   return (
@@ -19,6 +22,7 @@ function App() {
         <Route path='/state/particularstatescheme' element={<Statescheme />} />
         <Route path='/sector/scheme' element={<Redirectparticularscheme />} />
         <Route path="/aboutus" element={<Aboutus/>} />
+        <Route path="/faqs" element={<Faqs /> } />
       </Routes>
     </Router>
   );

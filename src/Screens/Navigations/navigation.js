@@ -31,7 +31,9 @@ return (
  
         <div className="menu">
             <button onClick={() => navigate("/")} className="menu-item">Home</button>
-            <button className="menu-item">Ministry</button>
+            <button className="menu-item" onClick={()=>{
+                navigate("/faqs")
+            }}>Faqs</button>
             <button onClick={() =>{navigate("/state")}} className="menu-item">State</button>
             <button onClick={()=>{navigate("/Aboutus")}} className="menu-item">About Us</button>
             </div>
@@ -39,8 +41,8 @@ return (
     </div>
             
     <div className="box3">
-        <button className="signup_login" >sign up</button>
-        <button className="signup_login" >log in</button>
+        <button  onClick={()=>{navigate("/signup")}} className="signup_login" >sign up</button>
+        <button  onClick={()=>{navigate("/login")}} className="signup_login" >log in</button>
         
     </div>
 

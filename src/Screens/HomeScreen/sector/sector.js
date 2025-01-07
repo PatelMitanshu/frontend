@@ -2,7 +2,6 @@ import React, { useEffect, useState }  from "react";
 import Navigation from "../../Navigations/navigation"
 import Footer from "../../footer/footer"
 import "./sector.css"
-import "./sector.css"
 import { useLocation } from 'react-router-dom';
 import  bank from "../facility_gridview/assets/icons/banking-and-finacial-service.png";
 import Transport_and_infrastructure from "../facility_gridview/assets/icons/Transport and infrastructure.png";

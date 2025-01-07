@@ -20,7 +20,17 @@
     text-align: center;
     transition: transform 0.3s ease; /* Hover transition effect */
   }
-  
+
+  .dropdown{
+    padding: 12px;
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    margin: 0px;
+  }
+  .dropdown button{
+    border: none;
+  }
   /* Circle container with green border */
   .circle-container {
     width: 120px;  /* Increased the size of the circle */
@@ -60,3 +70,64 @@
     transform: scale(1.05); /* Slightly enlarge the entire item on hover */
   }
   
+  .filter_container{
+    border: none;
+    box-shadow: inset 0 0 10px #b9d8d8;
+    height: 400px;
+    width: 250px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 13px;
+
+  }
+  .filter_dropdown{
+    border: none;
+    height: 30px;
+    font-weight: 750;
+  }
+  .scheme_card p{
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(96, 175, 74);
+    margin-left: 10px;
+  }
+  .filter_text{
+    margin: 0%;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    background-color: rgb(227, 227, 227);
+  }
+
+  .search_bar{
+    margin-left: 10px;
+    width: 94%;
+  }
+  .scheme_name{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(96, 175, 74);
+    margin-left: 10px;
+  }
+
+  .scheme_detailes{
+    border: none;
+    box-shadow: inset 0 0 10px #e4e4e4e8;
+  }
+  .scheme_inf{
+    font: 500 17px 'Roboto', sans-serif;
+    color: #333;
+    margin-left: 10px;
+  }
+  .scheme_image{
+
+    width: 95%;
+    height: 100%;
+  }
+
+  .scheme_image{
+    border: none;
+    border-radius: 2px;
+    box-shadow: inset 0 0 10px #51b709e8;
+  }
