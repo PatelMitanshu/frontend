@@ -21,26 +21,33 @@ const images = [
 
 // Example titles
 const titles = [
-  "Banking and finance", "Transport and infrastructure", "sports", "Womanandchildempowerment",
+  "Banking and finance", "Transport and infrastructure", "Sports", "Woman and Child Empowerment",
   "Item 5", "Item 6", "Item 7", "Item 8",
   "Item 9", "Item 10", "Item 11", "Item 12",
 ];
 
-
 const Category = () => {
   const navigate = useNavigate();
+
   const handleRedirect = (schemesector) => {
-    //pass the message to the sector page
+    // Pass the message to the sector page
     navigate('/sector', { state: { message: schemesector } });
   };
+
   return (
     <div className="grid-container">
       {images.map((image, index) => (
         <div className="grid-item" key={index}>
-          <div className="circle-container">
-            <img src={image}   alt={`icon-${index}`} className="icon" />
+          <div 
+            className="circle-container" 
+            onClick={() => handleRedirect(titles[index])} 
+            style={{ cursor: "pointer" }}
+          >
+            <img src={image} alt={`icon-${index}`} className="icon" />
           </div>
-          <button className="title" onClick={() => handleRedirect(titles[index])}>{titles[index]}</button>
+          <button className="title" onClick={() => handleRedirect(titles[index])}>
+            {titles[index]}
+          </button>
         </div>
       ))}
     </div>
